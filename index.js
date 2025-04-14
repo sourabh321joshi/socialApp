@@ -5,6 +5,10 @@ require("dotenv").config(); // Only needed if using .env
 const app = express();
 const PORT = 3000;
 
+const cors = require('cors');
+app.use(cors());
+
+
 // Load from .env or hardcoded values
 const APP_ID = process.env.INSTAGRAM_APP_ID || "YOUR_APP_ID";
 const APP_SECRET = process.env.INSTAGRAM_APP_SECRET || "YOUR_APP_SECRET";
