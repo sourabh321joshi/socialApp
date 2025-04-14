@@ -8,7 +8,7 @@ const PORT = 3000;
 // Load from .env or hardcoded values
 const APP_ID = process.env.INSTAGRAM_APP_ID || "YOUR_APP_ID";
 const APP_SECRET = process.env.INSTAGRAM_APP_SECRET || "YOUR_APP_SECRET";
-const REDIRECT_URI = process.env.REDIRECT_URI || "http://localhost:3000/auth/instagram/callback";
+const REDIRECT_URI = process.env.REDIRECT_URI || "https://socialapp-ww5a.onrender.com/auth/instagram/callback";
 
 // ➤ HOME PAGE
 app.get("/", (req, res) => {
